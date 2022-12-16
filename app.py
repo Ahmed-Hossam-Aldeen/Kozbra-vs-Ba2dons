@@ -11,7 +11,7 @@ input_image = st.file_uploader('Upload an image of a parsley or coriander')
 
 @st.experimental_singleton
 def load_model_from_path(suppress_st_warning=True):
-    return load_model('Kozbra_Ba2dons_accurate.h5')
+    return load_model('Kozbra_Ba2dons_accurate_80.h5')
 test  = load_model_from_path()
 
 if input_image:
