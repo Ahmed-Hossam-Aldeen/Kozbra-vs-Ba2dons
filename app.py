@@ -23,9 +23,9 @@ if input_image:
     image = image.reshape(1, 256,256,3)
 
     prediction = test.predict(image)
-    if prediction > 0.03:
+    if prediction > 0.5:
        final = "بقدونس"
-    elif prediction <0.03:
+    elif prediction <0.5:
        final = "كزبرة"    
 
     
